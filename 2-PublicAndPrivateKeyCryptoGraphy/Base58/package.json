@@ -1,0 +1,16 @@
+{
+  "name": "base58",
+  "version": "1.0.0",
+  "description": "",
+  "main": "encodingToBase58.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bs58": "^6.0.0"
+  }
+}

@@ -10,8 +10,8 @@ import {
 import { clusterApiUrl } from '@solana/web3.js';
 
 import '@solana/wallet-adapter-react-ui/styles.css';
-// import { SendTokens } from './SendTokens';
-// import { SignMessage } from './SignMessage';
+import { ShowBalance } from "./ShowBalance";
+
 function App(){
   const network = WalletAdapterNetwork.Devnet;
 
@@ -26,13 +26,14 @@ function App(){
             <div style={{display:'flex', justifyContent: "space-between"}}>
               <WalletMultiButton />
               <WalletDisconnectButton />
-            </div>
+                        </div>
+
             <RequestAirdrop />
+            <ShowBalance />
           </WalletModalProvider>
         </WalletProvider>
       </ConnectionProvider>
-      <RequestAirdrop />
-      hi there
+    
    
     </>
   )
